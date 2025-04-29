@@ -12,12 +12,12 @@ session_start();
     $mail->isSMTP();
     $mail->Host='smtp.gmail.com';
     $mail->SMTPAuth=true;
-    $mail->Username='shetyeyash444@gmail.com'; //your email 
-    $mail->Password='zqowsbfdyxtzyfew';//your password
+    $mail->Username='youremail'; //your email 
+    $mail->Password='youremailpasskey';//your password
     $mail->SMTPSecure='ssl';
     $mail->Port=465;
 
-    $mail->setFrom('shetyeyash444@gmail.com'); //your gmail
+    $mail->setFrom('your_email'); //your gmail
 
     $mail->addAddress($_SESSION['user_email']);
     $mail->isHTML(true);
